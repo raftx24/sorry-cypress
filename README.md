@@ -4,6 +4,7 @@
 [![VScodespaces](https://img.shields.io/endpoint?url=https%3A%2F%2Faka.ms%2Fvso-badge)](https://docs.sorry-cypress.dev/development/development-guide#github-codespaces)
 
   
+
 <div align="center">
 <p align="center">
   <img width="830" alt="banner dark" src="https://user-images.githubusercontent.com/1637928/147379205-2fe4fb9d-49e6-4a2b-917b-2a28973d2a3a.png">
