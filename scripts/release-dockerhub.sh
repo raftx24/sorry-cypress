@@ -48,7 +48,7 @@ function dockerBuild() {
   echo ========================
   docker build --file ${1}/Dockerfile $(getTagsArg ${2}) .
   echo ========================
-  echo ✅ Build completed ${2} from ${1} 
+  echo ✅ Build completed ${2} from ${1}
 }
 
 function dockerPush() {
@@ -88,13 +88,13 @@ fi
 echo 🚀 Releasing tags: $TAGS
 echo ========================
 
-dockerBuild "packages/${service}" "agoldis/sorry-cypress-${service}"
-# dockerBuild "packages/api" "agoldis/sorry-cypress-api"
-# dockerBuild "packages/dashboard" "agoldis/sorry-cypress-dashboard"
+dockerBuild "packages/${service}" "raftx24/sorry-cypress-${service}"
+# dockerBuild "packages/api" "raftx24/sorry-cypress-api"
+# dockerBuild "packages/dashboard" "raftx24/sorry-cypress-dashboard"
 
-dockerPush "agoldis/sorry-cypress-${service}"
-# dockerPush "agoldis/sorry-cypress-api"
-# dockerPush "agoldis/sorry-cypress-dashboard"
+dockerPush "raftx24/sorry-cypress-${service}"
+# dockerPush "raftx24/sorry-cypress-api"
+# dockerPush "raftx24/sorry-cypress-dashboard"
 
 echo ========================
 echo 🎉 Released to Dockerhub: $TAGS
